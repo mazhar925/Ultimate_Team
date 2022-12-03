@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Team</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="headerSection">
+        <h1>The Ultimate Team</h1>
+        <p>Select Your Best Five</p>
+    </header>
+    <main class="mainBodySection">
+        <div class="contentContainer">
+            <div class="cardContainer" id="cardsContainer">
+            </div>
+            <div class="calculatorContainer">
+                <div class="listContainer">
+                    <h1>Selected V</h1>
+                    <ol class="selectedList" id="selectedV">
+                    </ol>
+                </div>
+                <div class="calContainer">
+                    <div>
+                        <legend>Per Player:</legend>
+                        <input id="playerCost">
+                    </div>
+                    <button onclick="playerTotalCost()" class="cardBtn">Calculate</button>
+                    <p>Expenses: <span id="playersCost"></span></p>
+                    <div>
+                        <legend>Manager:</legend>
+                        <input id="managerCost">
+                    </div>
+                    <div>
+                        <legend>Coach:</legend>
+                        <input id="coachCost">
+                    </div>
+                    <button onclick="totalCost()" class="cardBtn">Calculate Total</button>
+                    <p>Total: <span id="totalCost"></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footerSection">
+        <h3>Copyright @ 2022 All Rights Reserved</h3>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
